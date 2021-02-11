@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner leitor = new Scanner(System.in);
+		
+		int peca1 = leitor.nextInt();
+		int numpeca1 = leitor.nextInt();
+		double valorpeca1 = leitor.nextDouble();
+		
+		int peca2 = leitor.nextInt();
+		int numpeca2 = leitor.nextInt();
+		double valorpeca2 = leitor.nextDouble();
+		
+		double total = (numpeca1 * valorpeca1) + (numpeca2 * valorpeca2);
+		
+		DecimalFormat df = new DecimalFormat("00.00");
+		System.out.println("VALOR A PAGAR: R$ " + df.format (total));
+		
+ 
+    }
+ 
+}
