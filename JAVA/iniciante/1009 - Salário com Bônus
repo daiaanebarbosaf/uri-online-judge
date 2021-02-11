@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+		Scanner leitor = new Scanner(System.in);
+		
+		String vendedor = leitor.next();
+		double salario = leitor.nextDouble();
+		double vendas = leitor.nextDouble();
+		
+		double bonus = 0.15 * vendas;
+		
+		double total = salario + bonus;
+		
+		DecimalFormat df = new DecimalFormat("00.00");
+		System.out.println("TOTAL = R$ " + df.format (total));
+ 
+    }
+ 
+}
