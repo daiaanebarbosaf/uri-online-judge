@@ -1,0 +1,31 @@
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+		Scanner leitor = new Scanner(System.in);
+		
+		double a = leitor.nextDouble();
+		double b = leitor.nextDouble();
+		double c = leitor.nextDouble();
+		double pi = 3.14159;
+		
+		double triretangulo = (a * c) / 2;
+		double circulo = (c * c ) * pi;
+		double trapezio = (a + b) * c / 2; 
+		double quadrado = b * b;
+		double retangulo = a * b;
+		
+		DecimalFormat df = new DecimalFormat("0.000");
+		System.out.println("TRIANGULO: " + df.format(triretangulo));
+		System.out.println("CIRCULO: " + df.format(circulo));
+		System.out.println("TRAPEZIO: " + df.format(trapezio));
+		System.out.println("QUADRADO: " + df.format(quadrado));
+		System.out.println("RETANGULO: " + df.format(retangulo));
+ 
+    }
+ 
+}
