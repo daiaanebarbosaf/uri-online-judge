@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.io.IOException;
+import static java.lang.Math.abs;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+ 		
+	  Scanner leitor = new Scanner(System.in);
+		
+		  int a = leitor.nextInt();
+      int b = leitor.nextInt();
+      int c = leitor.nextInt();
+      
+      int maior = (a + b + abs (a - b)) /2;
+      int total = (maior + c + abs(maior - c )) /2;
+      
+      System.out.println(+ total + " eh o maior");
+    }
+}
