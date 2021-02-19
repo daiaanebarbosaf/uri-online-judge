@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+ 
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+		Scanner leitor = new Scanner (System.in);
+		
+		double horas = leitor.nextDouble();
+		double kmh = leitor.nextDouble();
+		
+		double litros = horas * kmh /12;
+		
+		DecimalFormat df = new DecimalFormat("00.000");
+		System.out.println(df.format(litros));
+		
+ 
+    }
+ 
+}
