@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+	     Scanner leitor = new Scanner(System.in);
+	     
+	     String codigo = leitor.next();
+	     int quantidade = leitor.nextInt();
+
+			double resultado = "1".equals(codigo) ? quantidade * 4.0 : 0;
+			resultado = "2".equals(codigo) ? quantidade * 4.50 : resultado;
+			resultado = "3".equals(codigo) ? quantidade * 5.00 : resultado;
+			resultado = "4".equals(codigo) ? quantidade * 2.00 : resultado;
+			resultado = "5".equals(codigo) ? quantidade * 1.50 : resultado;
+			
+			System.out.printf("Total: R$ %.2f\n", resultado);
+ 
+    }
+ 
+}
